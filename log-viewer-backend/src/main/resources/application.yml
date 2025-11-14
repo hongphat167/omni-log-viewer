@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: omni-log-viewer
+
+log-source:
+  base-url: https://10.22.17.219:10443/omni-digital/
+  ssl-verify: false
+  poll-interval: 3000
+
+websocket:
+  allowed-origins: "*"
+  message-size-limit: 65536
+
+logging:
+  level:
+    vn.vnpay.omni: INFO
+    org.springframework: WARN
